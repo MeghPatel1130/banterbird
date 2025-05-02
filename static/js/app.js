@@ -16,7 +16,7 @@ async function submitPost() {
   const message = document.getElementById("postInput").value;
   console.log(message, username);
   try {
-    const response = await fetch("/api/posts", {
+    const response = await fetch("/api/add_post", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

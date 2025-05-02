@@ -17,7 +17,7 @@ def get_posts():
         posts = json.load(file)
     return jsonify(posts)
 
-@app.route('/api/posts', methods=['POST'])
+@app.route('/api/add_post', methods=['POST'])
 def add_post():
     new_post = request.get_json()
    
